@@ -7,7 +7,7 @@ from resnet_fpn import resnet_fpn_backbone
 def faster_rcnn():
     backbone       = resnet_fpn_backbone()
     model_config   = { 
-        "num_classes" : 2
+        "num_classes" : 2,
         "min_size": 1536,
         "max_size": 2048,
         "image_mean": (0.0,),
